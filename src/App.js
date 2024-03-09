@@ -9,7 +9,7 @@ function App() {
   const [cards, setCards] = useState([]);
   
   useEffect(() => {
-    fetch('http://45.140.178.161:80')
+    fetch('http://45.140.178.161:4000')
       .then(response => response.json())
       .then(data => {
         setCards(data);
